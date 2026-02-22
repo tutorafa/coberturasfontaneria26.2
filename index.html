@@ -477,7 +477,14 @@
 
     </div><!-- /menu-grid-4 -->
 
-    <!-- AVISO LEGAL — bottom -->
+    <!-- INFO BUTTON + AVISO LEGAL — bottom -->
+    <div style="display:flex;justify-content:flex-end;margin-top:18px;margin-bottom:10px;">
+      <button onclick="document.getElementById('info-modal').style.display='flex'"
+        style="background:#1A2330;color:#fff;border:none;border-radius:20px;padding:6px 16px;font-family:'Nunito',sans-serif;font-size:13px;font-weight:700;cursor:pointer;letter-spacing:0.3px;box-shadow:0 2px 8px rgba(0,0,0,0.18);">
+        Info
+      </button>
+    </div>
+
     <div class="aviso-card">
       <span class="aviso-icon">⚠️</span>
       <div class="aviso-text">
@@ -489,6 +496,42 @@
 
   </div>
 </div><!-- /screen-home -->
+
+<!-- ═══ MODAL INFO ═══ -->
+<div id="info-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:999;align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;border-radius:18px;max-width:400px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.22);overflow:hidden;position:relative;">
+    <!-- Header -->
+    <div style="background:#1A2330;padding:16px 20px 14px;display:flex;align-items:center;justify-content:space-between;">
+      <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#fff;">📱 Instalar la app</span>
+      <button onclick="document.getElementById('info-modal').style.display='none'"
+        style="background:rgba(255,255,255,0.15);border:none;color:#fff;width:28px;height:28px;border-radius:50%;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;">✕</button>
+    </div>
+    <!-- Content -->
+    <div style="padding:18px 20px 20px;">
+      <div style="margin-bottom:14px;display:flex;gap:13px;align-items:flex-start;">
+        <span style="font-size:22px;flex-shrink:0;">🤖</span>
+        <div>
+          <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">Android (Chrome)</div>
+          <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → menú ⋮ → <em>"Añadir a pantalla de inicio"</em></div>
+        </div>
+      </div>
+      <div style="margin-bottom:14px;display:flex;gap:13px;align-items:flex-start;">
+        <span style="font-size:22px;flex-shrink:0;">🍎</span>
+        <div>
+          <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">iOS (Safari)</div>
+          <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → botón compartir □↑ → <em>"Añadir a pantalla de inicio"</em></div>
+        </div>
+      </div>
+      <div style="display:flex;gap:13px;align-items:flex-start;">
+        <span style="font-size:22px;flex-shrink:0;">🖥️</span>
+        <div>
+          <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">PC (Chrome / Edge)</div>
+          <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → icono ⊕ en la barra de direcciones → <em>"Instalar"</em></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- ═══════════ DAÑOS POR AGUA ═══════════ -->
