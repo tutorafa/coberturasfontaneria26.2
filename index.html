@@ -113,9 +113,9 @@
   /* Wide card — full width (Daños por Agua) */
   .menu-card-wide {
     width: 100%;
-    background: #FFF4F5;
-    border: 1.5px solid var(--red);
-    border-left: 4px solid var(--red);
+    background: #FFF7F7;
+    border: 1px solid #F0A0A8;
+    border-left: 3px solid var(--red);
     border-radius: 14px;
     padding: 16px 16px;
     cursor: pointer;
@@ -124,9 +124,8 @@
     align-items: center;
     gap: 14px;
     margin-bottom: 12px;
-    box-shadow: -4px 4px 0 rgba(232,17,45,0.18), 0 1px 6px rgba(0,0,0,0.05);
   }
-  .menu-card-wide:active { transform: scale(0.975); box-shadow: -2px 2px 0 rgba(232,17,45,0.12); }
+  .menu-card-wide:active { transform: scale(0.975); }
   .menu-card-wide .card-text { flex: 1; }
   .menu-card-wide .card-title {
     font-family: 'Nunito', sans-serif;
@@ -157,10 +156,10 @@
   }
   .menu-card:active { transform: scale(0.955); }
 
-  .card-blue   { background: #F0F6FF; border: 1.5px solid #1565C0; border-left: 4px solid #1565C0; box-shadow: -4px 4px 0 rgba(21,101,192,0.18), 0 1px 6px rgba(0,0,0,0.04); }
-  .card-teal   { background: #F0FAF8; border: 1.5px solid #00796B; border-left: 4px solid #00796B; box-shadow: -4px 4px 0 rgba(0,121,107,0.18), 0 1px 6px rgba(0,0,0,0.04); }
-  .card-purple { background: #F6F0FF; border: 1.5px solid #6A1B9A; border-left: 4px solid #6A1B9A; box-shadow: -4px 4px 0 rgba(106,27,154,0.18), 0 1px 6px rgba(0,0,0,0.04); }
-  .card-orange { background: #FFF5EE; border: 1.5px solid #E65100; border-left: 4px solid #E65100; box-shadow: -4px 4px 0 rgba(230,81,0,0.18), 0 1px 6px rgba(0,0,0,0.04); }
+  .card-blue   { background: #F5F9FF; border: 1px solid #90B8E8; border-left: 3px solid #1565C0; }
+  .card-teal   { background: #F4FAF8; border: 1px solid #86C8BF; border-left: 3px solid #00796B; }
+  .card-purple { background: #F8F5FF; border: 1px solid #C3A8E0; border-left: 3px solid #6A1B9A; }
+  .card-orange { background: #FFF8F3; border: 1px solid #E8B899; border-left: 3px solid #E65100; }
 
   .menu-card-icon { display: flex; justify-content: center; margin-bottom: 10px; }
   .menu-card-title {
@@ -393,7 +392,7 @@
     <div class="menu-grid-4">
 
       <!-- Daños por Agua — red -->
-      <div class="menu-card" style="background:#FFF4F5;border:1.5px solid #E8112D;border-left:4px solid #E8112D;box-shadow:-4px 4px 0 rgba(232,17,45,0.18),0 1px 6px rgba(0,0,0,0.04);" onclick="goTo('screen-agua')">
+      <div class="menu-card" style="background:#FFF7F7;border:1px solid #F0A0A8;border-left:3px solid #E8112D;" onclick="goTo('screen-agua')">
         <div class="menu-card-icon">
           <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
             <path d="M19 5C19 5 9 16 9 23a10 10 0 0020 0C29 16 19 5 19 5z" fill="#E8112D" opacity="0.14" stroke="#E8112D" stroke-width="2" stroke-linejoin="round"/>
@@ -404,7 +403,7 @@
       </div>
 
       <!-- Roturas — indigo -->
-      <div class="menu-card" style="background:#F3F0FF;border:1.5px solid #4527A0;border-left:4px solid #4527A0;box-shadow:-4px 4px 0 rgba(69,39,160,0.18),0 1px 6px rgba(0,0,0,0.04);" onclick="goTo('screen-roturas')">
+      <div class="menu-card" style="background:#F8F6FF;border:1px solid #C3A8E0;border-left:3px solid #4527A0;" onclick="goTo('screen-roturas')">
         <div class="menu-card-icon">
           <!-- Lavabo / sanitario SVG -->
           <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
@@ -501,10 +500,10 @@
 <div id="info-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:999;align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)this.style.display='none'">
   <div style="background:#fff;border-radius:18px;max-width:400px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.22);overflow:hidden;position:relative;">
     <!-- Header -->
-    <div style="background:#1A2330;padding:16px 20px 14px;display:flex;align-items:center;justify-content:space-between;">
+    <div style="background:#E8112D;padding:16px 20px 14px;display:flex;align-items:center;justify-content:space-between;">
       <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#fff;">📱 Instalar la app</span>
       <button onclick="document.getElementById('info-modal').style.display='none'"
-        style="background:rgba(255,255,255,0.15);border:none;color:#fff;width:28px;height:28px;border-radius:50%;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;">✕</button>
+        style="background:rgba(255,255,255,0.2);border:none;color:#fff;width:28px;height:28px;border-radius:50%;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;">✕</button>
     </div>
     <!-- Content -->
     <div style="padding:18px 20px 20px;">
@@ -516,7 +515,7 @@
         </div>
       </div>
       <div style="margin-bottom:14px;display:flex;gap:13px;align-items:flex-start;">
-        <span style="font-size:22px;flex-shrink:0;">🍎</span>
+        <span style="font-size:22px;flex-shrink:0;filter:grayscale(1) brightness(1.8);">🍎</span>
         <div>
           <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">iOS (Safari)</div>
           <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → botón compartir □↑ → <em>"Añadir a pantalla de inicio"</em></div>
@@ -528,6 +527,9 @@
           <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">PC (Chrome / Edge)</div>
           <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → icono ⊕ en la barra de direcciones → <em>"Instalar"</em></div>
         </div>
+      </div>
+      <div style="margin-top:16px;padding-top:13px;border-top:1px solid #E8ECEF;">
+        <div style="font-size:13px;color:#607080;text-align:center;font-style:italic;">💡 La app funciona sin conexión después de la primera carga</div>
       </div>
     </div>
   </div>
