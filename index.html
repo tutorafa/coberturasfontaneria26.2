@@ -610,7 +610,7 @@
           <li><span class="li-icon">❌</span><span>Filtraciones o goteras de agua de lluvia, canalones o bajantes de pluviales vistas.</span></li>
           <li><span class="li-icon">❌</span><span>Humedad por condensación.</span></li>
           <li><span class="li-icon">❌</span><span>Humedad por capilaridad del terreno.</span></li>
-          <li><span class="li-icon">❌</span><span>Roturas por CONGELACIÓN.</span></li>
+          <li><span class="li-icon">❌</span><span>Roturas por CONGELACIÓN. <span style="color:#607080;font-size:0.93em;">(excepto pólizas Hogar Platino que cubre reparación del tramo dañado hasta 600€ y daños)</span></span></li>
           <li><span class="li-icon">❌</span><span>Derrame accidental como consecuencia de la caída de cubo o recipiente.</span></li>
         </ul>
       </div>
@@ -948,7 +948,7 @@
         </ul>
         <div class="info-box" style="background:#F6F0FF;border-color:#C5A8F5;color:#4527A0;margin-top:4px;">
           <span class="wi">💡</span>
-          <span style="color:#4527A0;font-size:14px;">Un <strong>desconchón</strong> es un daño superficial que afecta a una o varias caras. Se entiende por superficial un espesor de <strong>2mm o menos</strong>.</span>
+          <span style="color:#4527A0;font-size:14px;">Un <strong>desconchón</strong> es un daño superficial que, afectando a una o varias caras, su espesor es de <strong>2mm o menos</strong>.</span>
         </div>
       </div>
     </div>
@@ -1009,48 +1009,6 @@
     });
   }
 </script>
-<!-- ═══ BOTÓN FLOTANTE "i" — global, visible en todas las pantallas ═══ -->
-<button onclick="document.getElementById('modal-install').style.display='flex'"
-  style="position:fixed;bottom:22px;right:18px;z-index:800;width:46px;height:46px;border-radius:50%;background:#1A2330;border:none;color:#fff;font-family:Georgia,serif;font-size:22px;font-style:italic;font-weight:700;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.30);display:flex;align-items:center;justify-content:center;line-height:1;">i</button>
-
-<!-- ═══ MODAL INSTALAR APP — global ═══ -->
-<div id="modal-install" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:999;align-items:center;justify-content:center;padding:20px;" onclick="if(event.target===this)this.style.display='none'">
-  <div style="background:#fff;border-radius:18px;max-width:400px;width:100%;box-shadow:0 8px 32px rgba(0,0,0,0.22);overflow:hidden;">
-    <!-- Cabecera roja Pantone 185C -->
-    <div style="background:#E8112D;padding:16px 20px 14px;display:flex;align-items:center;justify-content:space-between;">
-      <span style="font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;color:#fff;">📱 Instalar la app</span>
-      <button onclick="document.getElementById('modal-install').style.display='none'"
-        style="background:rgba(255,255,255,0.2);border:none;color:#fff;width:28px;height:28px;border-radius:50%;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;">✕</button>
-    </div>
-    <!-- Contenido -->
-    <div style="padding:18px 20px 20px;">
-      <div style="margin-bottom:14px;display:flex;gap:13px;align-items:flex-start;">
-        <span style="font-size:22px;flex-shrink:0;">🤖</span>
-        <div>
-          <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">Android (Chrome)</div>
-          <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → menú ⋮ → <em>"Añadir a pantalla de inicio"</em></div>
-        </div>
-      </div>
-      <div style="margin-bottom:14px;display:flex;gap:13px;align-items:flex-start;">
-        <span style="font-size:22px;flex-shrink:0;filter:grayscale(1) brightness(1.8);">🍎</span>
-        <div>
-          <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">iOS (Safari)</div>
-          <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → botón compartir □↑ → <em>"Añadir a pantalla de inicio"</em></div>
-        </div>
-      </div>
-      <div style="display:flex;gap:13px;align-items:flex-start;">
-        <span style="font-size:22px;flex-shrink:0;">🖥️</span>
-        <div>
-          <div style="font-family:'Nunito',sans-serif;font-size:13px;font-weight:800;color:#1A2330;margin-bottom:3px;">PC (Chrome / Edge)</div>
-          <div style="font-size:13.5px;color:#4A5568;line-height:1.5;">Abre la URL → icono ⊕ en la barra de direcciones → <em>"Instalar"</em></div>
-        </div>
-      </div>
-      <div style="margin-top:16px;padding-top:13px;border-top:1px solid #E8ECEF;text-align:center;">
-        <span style="font-size:13px;color:#607080;font-style:italic;">💡 La app funciona sin conexión después de la primera carga.</span>
-      </div>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>
